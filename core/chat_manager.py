@@ -7,8 +7,15 @@ from app.utils.logger import logger
 from typing import Dict, List, Optional, Union
 import os
 
+"""
+Модуль для управления чат-ботами.
+Пример использования:
+manager = ChatManager()
+manager.send_message("Привет!")
+"""
 class ChatManager:
     """Управление логикой чата и взаимодействием с провайдерами"""
+    
     
     def __init__(self):
         self.thread_storage = ThreadStorage()
